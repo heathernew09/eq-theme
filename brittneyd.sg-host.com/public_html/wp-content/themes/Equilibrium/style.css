@@ -1,0 +1,53 @@
+/*
+Theme Name:   Equilibrium
+Description:  Calm mental space online
+Author:       Heather New
+Author URL:   https://heathernew.com
+Template:     twentytwentyone
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  Equilibrium
+*/
+
+/* Write here your own personal stylesheet */
+/* Variables */
+:root {
+
+	/* Font Family */
+	--global--font-primary: var(--font-headings, "Nanum Gothic", sans-serif);
+	--global--font-secondary: var(--font-base, "Nanum Gothic" sans-serif);
+
+    /* Logo size adjustment */
+    --branding--logo--max-width: 400px;
+}
+/* Logo size override */
+@media only screen and (min-width: 482px){
+    .site-logo .custom-logo {
+        width: 400px;   
+    }
+    
+    .site-logo .custom-logo {
+        max-width: var(--branding--logo--max-width);
+    }
+}
+
+
+div#content {
+    background-color: var(--global--color-background);
+}
+
+div#page {
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, body{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+@media only screen and (min-width: 822px){
+    .site-header {
+        padding-top: calc(0 * var(--global--spacing-vertical));
+        padding-bottom: 0;
+    }
+}
